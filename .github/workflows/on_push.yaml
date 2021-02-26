@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        nginx_version: ['1']
+        rabbitmq_version: ['3.8']
         os_type: ['alpine']
     steps:
       - uses: actions/checkout@v2
