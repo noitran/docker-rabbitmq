@@ -1,0 +1,5 @@
+command:
+  "rabbitmq-plugins list --implicitly-enabled":
+    stdout:
+      - rabbitmq_management
+    exit-status: 0

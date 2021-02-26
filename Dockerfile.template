@@ -1,0 +1,7 @@
+FROM %%DOCKER_IMAGE%%
+
+LABEL maintainer="noitran.black@gmail.com"
+
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+
+EXPOSE 4369 5671 5672 25672 15671 15672
