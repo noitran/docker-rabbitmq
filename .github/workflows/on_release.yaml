@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        rabbitmq_version: ['1']
+        rabbitmq_version: ['3.8']
         os_type: ['alpine']
     steps:
       - uses: actions/checkout@v2
-      - uses: e1himself/goss-installation-action@v1.0.1
+      - uses: e1himself/goss-installation-action@v1.0.3
 
       - name: Get git tag
         uses: noitran/versionee-github-action@master
